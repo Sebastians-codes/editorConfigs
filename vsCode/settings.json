@@ -1,0 +1,373 @@
+{
+	"[jsonc]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"[csharp]": {
+		"editor.defaultFormatter": "ms-dotnettools.csharp"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[css]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"editor.formatOnSave": true,
+	"workbench.statusBar.visible": false,
+	"editor.minimap.enabled": false,
+	"update.showReleaseNotes": false,
+	"zenMode.hideLineNumbers": false,
+	"editor.lineNumbers": "relative",
+	"window.zoomLevel": 0.5,
+	"workbench.activityBar.location": "hidden",
+	"editor.fontSize": 23,
+	"editor.bracketPairColorization.enabled": false,
+	"workbench.editor.showTabs": "none",
+	"workbench.layoutControl.enabled": false,
+	"editor.fontFamily": "FiraCode Nerd Font",
+	"editor.fontLigatures": true,
+	"terminal.integrated.defaultProfile.linux": "bash",
+	"terminal.integrated.fontSize": 20,
+	"terminal.integrated.fontFamily": "FiraCode Nerd Font",
+	"editor.fontWeight": "700",
+	"editor.guides.indentation": true,
+	"editor.formatOnPaste": true,
+	"terminal.integrated.tabs.enabled": false,
+	"workbench.iconTheme": "icons",
+	"workbench.startupEditor": "none",
+	"window.commandCenter": false,
+	"grunt.autoDetect": "on",
+	"workbench.editor.editorActionsLocation": "hidden",
+	"window.menuBarVisibility": "hidden",
+	"window.newWindowDimensions": "default",
+	"workbench.settings.applyToAllProfiles": [
+		"editor.fontFamily"
+	],
+	"editor.experimentalInlineEdit.fontFamily": "FiraCode Nerd Font",
+	"editor.scrollbar.verticalScrollbarSize": 3,
+	"security.workspace.trust.untrustedFiles": "open",
+	"files.autoSave": "onWindowChange",
+	"terminal.explorerKind": "external",
+	"terminal.external.linuxExec": "kitty",
+	"csharp.debug.console": "integratedTerminal",
+	"explorer.confirmDelete": false,
+	"csharpextensions.useFileScopedNamespace": true,
+	"C_Cpp.clang_format_fallbackStyle": "LLVM",
+	"cmake.showOptionsMovedNotification": false,
+	"background.fullscreen": {
+		"images": [
+			"/home/zerq/Pictures/Wallpapers/code.jpg"
+		],
+		"opacity": 0.97,
+		"size": "cover",
+		"position": "center",
+		"interval": 0
+	},
+	"git.confirmSync": false,
+	"workbench.colorTheme": "Slime",
+	"dotnet-test-explorer.testProjectPath": "*.Tests*",
+	"dotnet.codeLens.enableReferencesCodeLens": false,
+	"github.copilot.enable": {
+		"*": false,
+		"plaintext": false,
+		"markdown": false,
+		"scminput": false
+	},
+	"vim.leader": "<Space>",
+	"vim.hlsearch": true,
+	"vim.normalModeKeyBindingsNonRecursive": [
+		// NAVIGATION
+		// switch b/w buffers
+		{
+			"before": [
+				"<leader>",
+				"a"
+			],
+			"commands": [
+				"vscode-harpoon.addEditor"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"e"
+			],
+			"commands": [
+				"vscode-harpoon.editEditors"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"p",
+				"e"
+			],
+			"commands": [
+				"vscode-harpoon.editorQuickPick"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"1"
+			],
+			"commands": [
+				"vscode-harpoon.gotoEditor1"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"2"
+			],
+			"commands": [
+				"vscode-harpoon.gotoEditor2"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"3"
+			],
+			"commands": [
+				"vscode-harpoon.gotoEditor3"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"4"
+			],
+			"commands": [
+				"vscode-harpoon.gotoEditor4"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"5"
+			],
+			"commands": [
+				"vscode-harpoon.gotoEditor5"
+			]
+		},
+		{
+			"before": [
+				"<S-h>"
+			],
+			"commands": [
+				":bprevious"
+			]
+		},
+		{
+			"before": [
+				"<S-l>"
+			],
+			"commands": [
+				":bnext"
+			]
+		},
+		// splits
+		{
+			"before": [
+				"leader",
+				"v"
+			],
+			"commands": [
+				":vsplit"
+			]
+		},
+		{
+			"before": [
+				"leader",
+				"s",
+				"h"
+			],
+			"commands": [
+				":split"
+			]
+		},
+		{
+			"before": [
+				"leader",
+				"s",
+				"v"
+			],
+			"commands": [
+				":vsplit"
+			]
+		},
+		// panes
+		{
+			"before": [
+				"leader",
+				"h"
+			],
+			"commands": [
+				"workbench.action.focusLeftGroup"
+			]
+		},
+		{
+			"before": [
+				"leader",
+				"j"
+			],
+			"commands": [
+				"workbench.action.focusBelowGroup"
+			]
+		},
+		{
+			"before": [
+				"leader",
+				"k"
+			],
+			"commands": [
+				"workbench.action.focusAboveGroup"
+			]
+		},
+		{
+			"before": [
+				"leader",
+				"l"
+			],
+			"commands": [
+				"workbench.action.focusRightGroup"
+			]
+		},
+		// NICE TO HAVE
+		{
+			"before": [
+				"leader",
+				"w"
+			],
+			"commands": [
+				":w!"
+			]
+		},
+		{
+			"before": [
+				"leader",
+				"q"
+			],
+			"commands": [
+				":q!"
+			]
+		},
+		{
+			"before": [
+				"leader",
+				"x"
+			],
+			"commands": [
+				":x!"
+			]
+		},
+		{
+			"before": [
+				"[",
+				"d"
+			],
+			"commands": [
+				"editor.action.marker.prev"
+			]
+		},
+		{
+			"before": [
+				"]",
+				"d"
+			],
+			"commands": [
+				"editor.action.marker.next"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"c",
+				"a"
+			],
+			"commands": [
+				"editor.action.quickFix"
+			]
+		},
+		{
+			"before": [
+				"leader",
+				"f"
+			],
+			"commands": [
+				"workbench.action.quickOpen"
+			]
+		},
+		{
+			"before": [
+				"leader",
+				"p"
+			],
+			"commands": [
+				"editor.action.formatDocument"
+			]
+		},
+		{
+			"before": [
+				"g",
+				"h"
+			],
+			"commands": [
+				"editor.action.showDefinitionPreviewHover"
+			]
+		}
+	],
+	"vim.visualModeKeyBindings": [
+		// Stay in visual mode while indenting
+		{
+			"before": [
+				"<"
+			],
+			"commands": [
+				"editor.action.outdentLines"
+			]
+		},
+		{
+			"before": [
+				">"
+			],
+			"commands": [
+				"editor.action.indentLines"
+			]
+		},
+		// Move selected lines while staying in visual mode
+		{
+			"before": [
+				"J"
+			],
+			"commands": [
+				"editor.action.moveLinesDownAction"
+			]
+		},
+		{
+			"before": [
+				"K"
+			],
+			"commands": [
+				"editor.action.moveLinesUpAction"
+			]
+		},
+		// toggle comment selection
+		{
+			"before": [
+				"leader",
+				"c"
+			],
+			"commands": [
+				"editor.action.commentLine"
+			]
+		}
+	],
+	"github.copilot.chat.welcomeMessage": "never"
+}

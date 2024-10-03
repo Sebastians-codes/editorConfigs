@@ -1,0 +1,157 @@
+[
+	{
+		"key": "ctrl+shift+n c",
+		"command": "csharpextensions.createClass",
+		"when": "editorLangId == 'csharp'"
+	},
+	{
+		"key": "ctrl+shift+n e",
+		"command": "csharpextensions.createEnum",
+		"when": "editorLangId == 'csharp'"
+	},
+	{
+		"key": "ctrl+shift+n i",
+		"command": "csharpextensions.createInterface",
+		"when": "editorLangId == 'csharp'"
+	},
+	{
+		"key": "ctrl+shift+c o",
+		"command": "workbench.action.openChat"
+	},
+	{
+		"key": "ctrl+up",
+		"command": "cursorMove",
+		"args": {
+			"to": "up",
+			"by": "line",
+			"value": 5
+		}
+	},
+	{
+		"key": "ctrl+down",
+		"command": "cursorMove",
+		"args": {
+			"to": "down",
+			"by": "line",
+			"value": 5
+		}
+	},
+	{
+		"key": "ctrl+alt+v",
+		"command": "toggleVim"
+	},
+	{
+		"key": "ctrl+shift+k ctrl+shift+o",
+		"command": "workbench.action.files.openFolder",
+		"when": "openFolderWorkspaceSupport"
+	},
+	{
+		"key": "ctrl+k ctrl+o",
+		"command": "-workbench.action.files.openFolder",
+		"when": "openFolderWorkspaceSupport"
+	},
+	{
+		"key": "ctrl+p",
+		"command": "workbench.action.quickOpen"
+	},
+	{
+		"key": "ctrl+p",
+		"command": "-workbench.action.quickOpen"
+	},
+	{
+		"key": "ctrl+b",
+		"command": "workbench.action.toggleSidebarVisibility"
+	},
+	{
+		"key": "ctrl+b",
+		"command": "-workbench.action.toggleSidebarVisibility"
+	},
+	{
+		"key": "ctrl+w",
+		"command": "workbench.action.closeActiveEditor"
+	},
+	{
+		"key": "ctrl+w",
+		"command": "-workbench.action.closeActiveEditor"
+	},
+	{
+		"key": "ctrl+b",
+		"command": "-extension.vim_ctrl+b",
+		"when": "editorTextFocus && vim.active && vim.use<C-b> && !inDebugRepl && vim.mode != 'Insert'"
+	},
+	{
+		"key": "ctrl+backspace",
+		"command": "-extension.vim_ctrl+backspace",
+		"when": "editorTextFocus && vim.active && vim.use<C-BS> && !inDebugRepl && vim.mode != 'Insert'"
+	},
+	{
+		"key": "ctrl+p",
+		"command": "-extension.vim_ctrl+p",
+		"when": "editorTextFocus && vim.active && vim.use<C-p> && !inDebugRepl || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
+	},
+	{
+		"key": "ctrl+w",
+		"command": "-extension.vim_ctrl+w",
+		"when": "editorTextFocus && vim.active && vim.use<C-w> && !inDebugRepl"
+	},
+	{
+		"key": "F4",
+		"command": "workbench.action.tasks.runTask",
+		"args": "test"
+	},
+	{
+		"key": "ctrl+shift+k o",
+		"command": "workbench.action.copyEditorToNewWindow",
+		"when": "activeEditor"
+	},
+	{
+		"key": "ctrl+k o",
+		"command": "-workbench.action.copyEditorToNewWindow",
+		"when": "activeEditor"
+	},
+	{
+		"key": "ctrl+[Comma]",
+		"command": "editor.action.commentLine",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+shift+7",
+		"command": "-editor.action.commentLine",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+c",
+		"command": "-extension.vim_ctrl+c",
+		"when": "editorTextFocus && vim.active && vim.overrideCtrlC && vim.use<C-c> && !inDebugRepl"
+	},
+	{
+		"key": "ctrl+a",
+		"command": "-extension.vim_ctrl+a",
+		"when": "editorTextFocus && vim.active && vim.use<C-a> && !inDebugRepl"
+	},
+	{
+		"key": "ctrl+v",
+		"command": "-extension.vim_ctrl+v",
+		"when": "editorTextFocus && vim.active && vim.use<C-v> && !inDebugRepl"
+	},
+	{
+		"key": "ctrl+j",
+		"command": "-extension.vim_ctrl+j",
+		"when": "editorTextFocus && vim.active && vim.use<C-j> && !inDebugRepl"
+	},
+	{
+		"key": "ctrl+x",
+		"command": "-extension.vim_ctrl+x",
+		"when": "editorTextFocus && vim.active && vim.use<C-x> && !inDebugRepl"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "-extension.vim_ctrl+down",
+		"when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
+	},
+	{
+		"key": "ctrl+pagedown",
+		"command": "-extension.vim_ctrl+pagedown",
+		"when": "editorTextFocus && vim.active && vim.use<C-pagedown> && !inDebugRepl"
+	}
+]
