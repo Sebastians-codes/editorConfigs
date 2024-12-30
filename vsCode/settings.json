@@ -26,9 +26,9 @@
 				"number": "#C2966B",
 				"parameter": "#b8a2ba",
 				"class": "#b06767",
-				"namespace": "#9f9f9f",
+				"namespace": "#748fa7c2",
 				"keyword": "#7894AB",
-				"controlKeyword": "#597186c2",
+				"controlKeyword": "#748fa7c2",
 				"interface": "#547b8c"
 			}
 		}
