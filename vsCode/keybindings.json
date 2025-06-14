@@ -1,24 +1,5 @@
 [
     {
-        "key": "ctrl+shift+n c",
-        "command": "csharpextensions.createClass",
-        "when": "editorLangId == 'csharp'"
-    },
-    {
-        "key": "ctrl+shift+n e",
-        "command": "csharpextensions.createEnum",
-        "when": "editorLangId == 'csharp'"
-    },
-    {
-        "key": "ctrl+shift+n i",
-        "command": "csharpextensions.createInterface",
-        "when": "editorLangId == 'csharp'"
-    },
-    {
-        "key": "ctrl+shift+c o",
-        "command": "workbench.action.openChat"
-    },
-    {
         "key": "ctrl+up",
         "command": "cursorMove",
         "args": {
@@ -67,7 +48,7 @@
         "command": "-workbench.action.toggleSidebarVisibility"
     },
     {
-        "key": "ctrl+w",
+        "key": "alt+q",
         "command": "workbench.action.closeActiveEditor"
     },
     {
@@ -185,5 +166,60 @@
     {
         "key": "shift+space t",
         "command": "workbench.action.terminal.killAll"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "-extension.vim_ctrl+f",
+        "when": "editorTextFocus && vim.active && vim.use<C-f> && !inDebugRepl && vim.mode != 'Insert'"
+    },
+    {
+        "key": "shift+space f",
+        "command": "fzf-quick-open.runFzfSearchProjectRoot"
+    },
+    {
+        "key": "ctrl+g f",
+        "command": "git.fetch"
+    },
+    {
+        "key": "ctrl+g c",
+        "command": "git.commit"
+    },
+    {
+        "key": "ctrl+g p",
+        "command": "git.pull"
+    },
+    {
+        "key": "ctrl+g a",
+        "command": "git.stage"
+    },
+    {
+        "key": "alt+f",
+        "command": "explorer.newFile"
+    },
+    {
+        "key": "ctrl+alt+f",
+        "command": "explorer.newFolder"
+    },
+    {
+        "key": "shift+j",
+        "command": "selectNextSuggestion",
+        "when": "suggestWidgetVisible"
+    },
+    {
+        "key": "shift+k",
+        "command": "selectPrevSuggestion",
+        "when": "suggestWidgetVisible"
+    },
+    {
+        "key": "alt+t",
+        "command": "testing.runAll"
+    },
+    {
+        "key": "ctrl+oem_1 a",
+        "command": "-testing.runAll"
+    },
+    {
+        "key": "alt+b",
+        "command": "csdevkit.buildSolution"
     }
 ]
