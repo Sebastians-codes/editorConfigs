@@ -60,13 +60,13 @@ function gco {
 # List all branches
 function gb {
     Write-Host "All branches:" -ForegroundColor Cyan
-    git branch -a
+    git --no-pager branch -a
 }
 
 # List local branches only
 function gbl {
     Write-Host "Local branches:" -ForegroundColor Cyan
-    git branch
+    git --no-pager branch
 }
 
 # Delete branch (local and remote)
