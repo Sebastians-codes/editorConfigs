@@ -57,13 +57,13 @@ gco() {
 # List all branches
 gb() {
     echo "📋 All branches:"
-    git branch -a
+    git --no-pager branch -a
 }
 
 # List local branches only
 gbl() {
     echo "📋 Local branches:"
-    git branch
+    git --no-pager branch
 }
 
 # Delete branch (local and remote)
