@@ -1,0 +1,17 @@
+artlaman.chalice-icon-theme
+eamodio.gitlens
+esbenp.prettier-vscode
+expo.vscode-expo-tools
+ms-dotnettools.csdevkit
+ms-dotnettools.csharp
+ms-dotnettools.vscode-dotnet-runtime
+mvllow.rose-pine
+qufiwefefwoyn.kanagawa
+redhat.vscode-yaml
+rust-lang.rust-analyzer
+steoates.autoimport
+streetsidesoftware.code-spell-checker
+streetsidesoftware.code-spell-checker-swedish
+usernamehw.errorlens
+vscodevim.vim
+ziglang.vscode-zig
