@@ -33,8 +33,8 @@ vscodevim.vim ziglang.vscode-zig
 
 Then run:
 
-**Linux/macOS:**
 ```bash
+**Linux/macOS:**
 cat extensions.txt | xargs -I {} code --install-extension {}
 
 Windows (PowerShell):
