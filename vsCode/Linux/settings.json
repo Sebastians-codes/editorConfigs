@@ -1,0 +1,383 @@
+{
+	"[jsonc]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"[csharp]": {
+		"editor.defaultFormatter": "ms-dotnettools.csharp"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[css]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"window.dialogStyle": "native",
+	"window.titleBarStyle": "native",
+	"window.customTitleBarVisibility": "auto",
+	"editor.minimap.enabled": false,
+	"update.showReleaseNotes": false,
+	"workbench.sideBar.location": "right",
+	"zenMode.hideLineNumbers": false,
+	"editor.lineNumbers": "relative",
+	"workbench.statusBar.visible": false,
+	"window.zoomLevel": 0.5,
+	"workbench.activityBar.location": "hidden",
+	"editor.fontSize": 17,
+	"editor.renderLineHighlight": "none",
+	"editor.bracketPairColorization.enabled": false,
+	"workbench.layoutControl.enabled": false,
+	"editor.fontFamily": "Hack Nerd Font Mono",
+	"editor.fontLigatures": false,
+	"terminal.integrated.defaultProfile.linux": "fish",
+	"terminal.integrated.fontSize": 16,
+	"terminal.integrated.fontFamily": "Hack Nerd Font Mono",
+	"editor.fontWeight": "450",
+	"editor.guides.indentation": true,
+	"editor.formatOnPaste": true,
+	"terminal.integrated.tabs.enabled": false,
+	"terminal.integrated.commandsToSkipShell": [],
+	"workbench.startupEditor": "none",
+	"window.commandCenter": false,
+	"grunt.autoDetect": "on",
+	"workbench.editor.editorActionsLocation": "hidden",
+	"window.menuBarVisibility": "hidden",
+	"window.newWindowDimensions": "default",
+	"workbench.settings.applyToAllProfiles": [
+		"editor.fontFamily"
+	],
+	"editor.scrollbar.verticalScrollbarSize": 3,
+	"security.workspace.trust.untrustedFiles": "open",
+	"terminal.external.linuxExec": "ghostty",
+	"csharp.debug.console": "integratedTerminal",
+	"explorer.confirmDelete": false,
+	"git.confirmSync": false,
+	"dotnet.codeLens.enableReferencesCodeLens": false,
+	"vim.leader": "<space>",
+	"vim.useSystemClipboard": true,
+	"vim.timeout": 300,
+	"vim.enableNeovim": false,
+	"vim.useCtrlKeys": true,
+	"vim.highlightedyank.enable": true,
+	"vim.normalModeKeyBindingsNonRecursive": [
+		{
+			"before": [
+				"<leader>",
+				"w"
+			],
+			"commands": [
+				"editor.action.organizeImports",
+				"editor.action.formatDocument",
+				":w"
+			]
+		},
+		{
+			"before": [
+				"K"
+			],
+			"commands": [
+				"editor.action.showHover"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"r",
+				"n"
+			],
+			"commands": [
+				"editor.action.rename"
+			]
+		},
+		{
+			"before": [
+				"g",
+				"r"
+			],
+			"commands": [
+				"editor.action.goToReferences"
+			]
+		},
+		{
+			"before": [
+				"<A-j>"
+			],
+			"commands": [
+				"editor.action.moveLinesDownAction"
+			]
+		},
+		{
+			"before": [
+				"<A-k>"
+			],
+			"commands": [
+				"editor.action.moveLinesUpAction"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"s",
+				"f"
+			],
+			"commands": [
+				"workbench.action.quickOpen"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"f",
+				"f"
+			],
+			"commands": [
+				"workbench.action.quickOpen"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"s",
+				"g"
+			],
+			"commands": [
+				"workbench.action.findInFiles"
+			]
+		},
+		{
+			"before": [
+				"<C-space>"
+			],
+			"commands": [
+				"editor.action.quickFix"
+			]
+		},
+		{
+			"before": [
+				"<A-j>"
+			],
+			"commands": [
+				"editor.action.moveLinesDownAction"
+			]
+		},
+		{
+			"before": [
+				"<A-k>"
+			],
+			"commands": [
+				"editor.action.moveLinesUpAction"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"t"
+			],
+			"commands": [
+				"workbench.action.terminal.toggleTerminal"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"p",
+				"v"
+			],
+			"commands": [
+				"workbench.view.explorer"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"b"
+			],
+			"commands": [
+				"workbench.action.toggleSidebarVisibility"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"x"
+			],
+			"commands": [
+				"workbench.view.extensions"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"c"
+			],
+			"commands": [
+				"editor.action.commentLine"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"r"
+			],
+			"commands": [
+				"workbench.action.openRecent"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"d",
+				"t"
+			],
+			"commands": [
+				"editor.debug.action.toggleBreakpoint"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"d",
+				"d"
+			],
+			"commands": [
+				"workbench.view.debug"
+			]
+		}
+	],
+	"vim.visualModeKeyBindingsNonRecursive": [
+		{
+			"before": [
+				"<A-j>"
+			],
+			"commands": [
+				"editor.action.moveLinesDownAction"
+			]
+		},
+		{
+			"before": [
+				"<A-k>"
+			],
+			"commands": [
+				"editor.action.moveLinesUpAction"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"c"
+			],
+			"commands": [
+				"editor.action.commentLine"
+			]
+		}
+	],
+	"vim.handleKeys": {
+		"<C-d>": true,
+		"<C-n>": false,
+		"<C-f>": false
+	},
+	"vim.visualstar": true,
+	"editor.stickyScroll.scrollWithEditor": false,
+	"workbench.tree.enableStickyScroll": false,
+	"editor.stickyScroll.enabled": false,
+	"csharp.suppressBuildAssetsNotification": true,
+	"csharp.experimental.debug.hotReload": false,
+	"csharp.preview.improvedLaunchExperience": true,
+	"editor.acceptSuggestionOnCommitCharacter": false,
+	"editor.acceptSuggestionOnEnter": "off",
+	"git.autofetch": true,
+	"testing.automaticallyOpenTestResults": "openExplorerOnTestStart",
+	"debug.hideSlowPreLaunchWarning": true,
+	"editor.hideCursorInOverviewRuler": true,
+	"editor.lightbulb.enabled": "off",
+	"breadcrumbs.enabled": false,
+	"workbench.editor.showTabs": "none",
+	"editor.wordWrap": "on",
+	"editor.formatOnSave": true,
+	"git.openRepositoryInParentFolders": "never",
+	"editor.inlineCompletionsAccessibilityVerbose": true,
+	"omnisharp.enableAsyncCompletion": true,
+	"workbench.iconTheme": "chalice-icon-theme",
+	"rust-analyzer.hover.actions.references.enable": true,
+	"rust-analyzer.lens.debug.enable": false,
+	"rust-analyzer.lens.run.enable": false,
+	"explorer.fileNesting.patterns": {
+		"*.ts": "${capture}.js",
+		"*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+		"*.jsx": "${capture}.js",
+		"*.tsx": "${capture}.ts",
+		"tsconfig.json": "tsconfig.*.json",
+		"package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
+		"Cargo.toml": "Cargo.lock",
+		"*.sqlite": "${capture}.${extname}-*",
+		"*.db": "${capture}.${extname}-*",
+		"*.sqlite3": "${capture}.${extname}-*",
+		"*.db3": "${capture}.${extname}-*",
+		"*.sdb": "${capture}.${extname}-*",
+		"*.s3db": "${capture}.${extname}-*"
+	},
+	"zig.zls.enabled": "on",
+	"zig.zls.inlayHintsShowParameterName": false,
+	"zig.zls.inlayHintsShowVariableTypeHints": false,
+	"rust-analyzer.inlayHints.parameterHints.enable": false,
+	"rust-analyzer.inlayHints.typeHints.enable": false,
+	"errorLens.enabledDiagnosticLevels": [
+		"warning",
+		"info",
+		"error"
+	],
+	"editor.accessibilitySupport": "off",
+	"[json]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"workbench.colorTheme": "Kanagawa",
+	"workbench.colorCustomizations": {
+		"editor.background": "#0d0d0d",
+		"sideBar.background": "#0d0d0d",
+		"activityBar.background": "#0d0d0d",
+		"panel.background": "#0d0d0d",
+		"quickInput.background": "#0d0d0d",
+		"quickInputList.focusBackground": "#1a1a1a",
+		"editorWidget.background": "#0d0d0d",
+		"editorSuggestWidget.background": "#0d0d0d",
+		"editorHoverWidget.background": "#0d0d0d",
+		"editorGutter.background": "#0d0d0d",
+		"peekView.editorBackground": "#0d0d0d",
+		"peekViewEditor.background": "#0d0d0d",
+		"peekViewResult.background": "#0d0d0d",
+		"peekViewTitle.background": "#0d0d0d",
+		"peekViewTitle.color": "#0d0d0d",
+		"menu.background": "#0d0d0d",
+		"list.hoverBackground": "#1a1a1a",
+		"list.activeSelectionBackground": "#1a1a1a",
+		"terminal.background": "#0d0d0d",
+	},
+	"extensions.experimental.affinity": {
+		"asvetliakov.vscode-neovim": 1
+	},
+	"search.searchEditor.reusePriorSearchConfiguration": true,
+	"search.mode": "view",
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"cSpell.language": "en,sv-SE",
+	"cSpell.userWords": [
+		"firestore",
+		"Tasker"
+	],
+	"redhat.telemetry.enabled": false,
+	"terminal.integrated.hideOnStartup": "always",
+	"gitlens.ai.model": "gitkraken",
+	"gitlens.ai.gitkraken.model": "gemini:gemini-2.0-flash",
+	"gitlens.currentLine.uncommittedChangesFormat": "",
+	"gitlens.codeLens.authors.command": false,
+	"gitlens.statusBar.enabled": false,
+	"gitlens.statusBar.pullRequests.enabled": false,
+	"gitlens.codeLens.authors.enabled": false,
+	"gitlens.codeLens.recentChange.enabled": false
+}
