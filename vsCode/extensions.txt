@@ -5,7 +5,6 @@ expo.vscode-expo-tools
 ms-dotnettools.csdevkit
 ms-dotnettools.csharp
 ms-dotnettools.vscode-dotnet-runtime
-mvllow.rose-pine
 qufiwefefwoyn.kanagawa
 redhat.vscode-yaml
 rust-lang.rust-analyzer
