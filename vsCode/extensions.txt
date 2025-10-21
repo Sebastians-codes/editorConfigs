@@ -6,7 +6,6 @@ ms-dotnettools.csdevkit
 ms-dotnettools.csharp
 ms-dotnettools.vscode-dotnet-runtime
 qufiwefefwoyn.kanagawa
-redhat.vscode-yaml
 rust-lang.rust-analyzer
 steoates.autoimport
 streetsidesoftware.code-spell-checker
