@@ -1,0 +1,465 @@
+{
+	"Console Write": {
+		"prefix": "cw",
+		"body": [
+			"Console.Write($0);"
+		],
+		"description": "Console.Write"
+	},
+	"Console WriteLine": {
+		"prefix": "cww",
+		"body": [
+			"Console.WriteLine($0);"
+		],
+		"description": "Console.WriteLine"
+	},
+	"Console Write Interpolation": {
+		"prefix": "cwe",
+		"body": [
+			"Console.Write($\"${1:text} {${2:variable}}$0\");"
+		],
+		"description": "Console.Write with string interpolation"
+	},
+	"Console WriteLine Interpolation": {
+		"prefix": "cwwe",
+		"body": [
+			"Console.WriteLine($\"${1:text} {${2:variable}}$0\");"
+		],
+		"description": "Console.WriteLine with string interpolation"
+	},
+	"Class": {
+		"prefix": "c",
+		"body": [
+			"public class ${1:ClassName}",
+			"{",
+			"\t$0",
+			"}"
+		],
+		"description": "Create a public class"
+	},
+	"Interface": {
+		"prefix": "i",
+		"body": [
+			"public interface I${1:InterfaceName}",
+			"{",
+			"\t$0",
+			"}"
+		],
+		"description": "Create a public interface"
+	},
+	"Property": {
+		"prefix": "p",
+		"body": [
+			"public ${1:string} ${2:PropertyName} { get; set; }$0"
+		],
+		"description": "Create an auto-property"
+	},
+	"Property with private setter": {
+		"prefix": "pg",
+		"body": [
+			"public ${1:string} ${2:PropertyName} { get; private set; }$0"
+		],
+		"description": "Create a property with private setter"
+	},
+	"Read-only Property": {
+		"prefix": "pr",
+		"body": [
+			"public ${1:string} ${2:PropertyName} { get; }$0"
+		],
+		"description": "Create a read-only property"
+	},
+	"Full Property": {
+		"prefix": "pf",
+		"body": [
+			"private ${1:string} _${2:propertyName};",
+			"public ${1:string} ${3:PropertyName}",
+			"{",
+			"\tget { return _${2:propertyName}; }",
+			"\tset { _${2:propertyName} = value; }",
+			"}$0"
+		],
+		"description": "Create a property with backing field"
+	},
+	"Method": {
+		"prefix": "fn",
+		"body": [
+			"public ${1:void} ${2:MethodName}(${3:})",
+			"{",
+			"\t$0",
+			"}"
+		],
+		"description": "Create a public method"
+	},
+	"Async Method": {
+		"prefix": "af",
+		"body": [
+			"public async Task${1:<${2:ReturnType}>} ${3:MethodName}(${4:})",
+			"{",
+			"\t$0",
+			"}"
+		],
+		"description": "Create an async method"
+	},
+	"Constructor": {
+		"prefix": "ct",
+		"body": [
+			"public ${1:${TM_FILENAME_BASE}}(${2:})",
+			"{",
+			"\t$0",
+			"}"
+		],
+		"description": "Create a constructor"
+	},
+	"Constructor with dependency injection": {
+		"prefix": "cdi",
+		"body": [
+			"private readonly ${1:IService} _${2:service};",
+			"",
+			"public ${3:${TM_FILENAME_BASE}}(${1:IService} ${2:service})",
+			"{",
+			"\t_${2:service} = ${2:service};",
+			"\t$0",
+			"}"
+		],
+		"description": "Constructor with dependency injection"
+	},
+	"Try-Catch": {
+		"prefix": "tc",
+		"body": [
+			"try",
+			"{",
+			"\t$0",
+			"}",
+			"catch (${1:Exception} ${2:ex})",
+			"{",
+			"\t$3",
+			"}"
+		],
+		"description": "Try-catch block"
+	},
+	"Try-Catch-Finally": {
+		"prefix": "tcf",
+		"body": [
+			"try",
+			"{",
+			"\t$0",
+			"}",
+			"catch (${1:Exception} ${2:ex})",
+			"{",
+			"\t$3",
+			"}",
+			"finally",
+			"{",
+			"\t$4",
+			"}"
+		],
+		"description": "Try-catch-finally block"
+	},
+	"Using Statement": {
+		"prefix": "us",
+		"body": [
+			"using (${1:var} ${2:resource} = ${3:})",
+			"{",
+			"\t$0",
+			"}"
+		],
+		"description": "Using statement"
+	},
+	"Using Declaration": {
+		"prefix": "ud",
+		"body": [
+			"using ${1:var} ${2:resource} = ${3:};$0"
+		],
+		"description": "Using declaration (C# 8+)"
+	},
+	"For Loop": {
+		"prefix": "f",
+		"body": [
+			"for (int ${1:i} = 0; ${1:i} < ${2:length}; ${1:i}++)",
+			"{",
+			"\t$0",
+			"}"
+		],
+		"description": "For loop"
+	},
+	"Foreach Loop": {
+		"prefix": "fe",
+		"body": [
+			"foreach (${1:var} ${2:item} in ${3:collection})",
+			"{",
+			"\t$0",
+			"}"
+		],
+		"description": "Foreach loop"
+	},
+	"LINQ Where": {
+		"prefix": "lw",
+		"body": [
+			"${1:collection}.Where(${2:x} => ${2:x}.$0)"
+		],
+		"description": "LINQ Where clause"
+	},
+	"LINQ Select": {
+		"prefix": "ls",
+		"body": [
+			"${1:collection}.Select(${2:x} => ${3:x}.$0)"
+		],
+		"description": "LINQ Select clause"
+	},
+	"LINQ FirstOrDefault": {
+		"prefix": "lf",
+		"body": [
+			"${1:collection}.FirstOrDefault(${2:x} => ${2:x}.$0)"
+		],
+		"description": "LINQ FirstOrDefault"
+	},
+	"LINQ Any": {
+		"prefix": "la",
+		"body": [
+			"${1:collection}.Any(${2:x} => ${2:x}.$0)"
+		],
+		"description": "LINQ Any"
+	},
+	"Test Method (xUnit)": {
+		"prefix": "tx",
+		"body": [
+			"[Fact]",
+			"public void ${1:TestName}()",
+			"{",
+			"\t// Arrange",
+			"\t$2",
+			"",
+			"\t// Act",
+			"\t$3",
+			"",
+			"\t// Assert",
+			"\t$0",
+			"}"
+		],
+		"description": "xUnit test method"
+	},
+	"Test Method (NUnit)": {
+		"prefix": "tn",
+		"body": [
+			"[Test]",
+			"public void ${1:TestName}()",
+			"{",
+			"\t// Arrange",
+			"\t$2",
+			"",
+			"\t// Act",
+			"\t$3",
+			"",
+			"\t// Assert",
+			"\t$0",
+			"}"
+		],
+		"description": "NUnit test method"
+	},
+	"Test Method (MSTest)": {
+		"prefix": "tm",
+		"body": [
+			"[TestMethod]",
+			"public void ${1:TestName}()",
+			"{",
+			"\t// Arrange",
+			"\t$2",
+			"",
+			"\t// Act",
+			"\t$3",
+			"",
+			"\t// Assert",
+			"\t$0",
+			"}"
+		],
+		"description": "MSTest test method"
+	},
+	"API Controller": {
+		"prefix": "ac",
+		"body": [
+			"[ApiController]",
+			"[Route(\"api/[controller]\")]",
+			"public class ${1:${TM_FILENAME_BASE}} : ControllerBase",
+			"{",
+			"\t$0",
+			"}"
+		],
+		"description": "ASP.NET Core API Controller"
+	},
+	"GET Endpoint": {
+		"prefix": "hg",
+		"body": [
+			"[HttpGet(\"${1:}\")]",
+			"public async Task<ActionResult<${2:ReturnType}>> ${3:MethodName}()",
+			"{",
+			"\t$0",
+			"\treturn Ok();",
+			"}"
+		],
+		"description": "HTTP GET endpoint"
+	},
+	"POST Endpoint": {
+		"prefix": "hp",
+		"body": [
+			"[HttpPost(\"${1:}\")]",
+			"public async Task<ActionResult<${2:ReturnType}>> ${3:MethodName}([FromBody] ${4:RequestType} request)",
+			"{",
+			"\t$0",
+			"\treturn Ok();",
+			"}"
+		],
+		"description": "HTTP POST endpoint"
+	},
+	"PUT Endpoint": {
+		"prefix": "hpu",
+		"body": [
+			"[HttpPut(\"${1:{id}}\")]",
+			"public async Task<ActionResult<${2:ReturnType}>> ${3:MethodName}(${4:int id}, [FromBody] ${5:RequestType} request)",
+			"{",
+			"\t$0",
+			"\treturn Ok();",
+			"}"
+		],
+		"description": "HTTP PUT endpoint"
+	},
+	"DELETE Endpoint": {
+		"prefix": "hd",
+		"body": [
+			"[HttpDelete(\"${1:{id}}\")]",
+			"public async Task<ActionResult> ${2:MethodName}(${3:int id})",
+			"{",
+			"\t$0",
+			"\treturn NoContent();",
+			"}"
+		],
+		"description": "HTTP DELETE endpoint"
+	},
+	"Region": {
+		"prefix": "rg",
+		"body": [
+			"#region ${1:RegionName}",
+			"$0",
+			"#endregion"
+		],
+		"description": "Create a region"
+	},
+	"Null Check": {
+		"prefix": "ifn",
+		"body": [
+			"if (${1:variable} == null)",
+			"{",
+			"\t$0",
+			"}"
+		],
+		"description": "Null check"
+	},
+	"Throw ArgumentNullException": {
+		"prefix": "ta",
+		"body": [
+			"if (${1:argument} == null)",
+			"{",
+			"\tthrow new ArgumentNullException(nameof(${1:argument}));",
+			"}$0"
+		],
+		"description": "Throw ArgumentNullException"
+	},
+	"Guard Clause": {
+		"prefix": "g",
+		"body": [
+			"ArgumentNullException.ThrowIfNull(${1:argument});$0"
+		],
+		"description": "Guard clause (C# 11+)"
+	},
+	"Record": {
+		"prefix": "rec",
+		"body": [
+			"public record ${1:RecordName}(${2:string Property1}${3:, string Property2});$0"
+		],
+		"description": "Create a record"
+	},
+	"Enum": {
+		"prefix": "e",
+		"body": [
+			"public enum ${1:EnumName}",
+			"{",
+			"\t${2:Value1},",
+			"\t${3:Value2}$0",
+			"}"
+		],
+		"description": "Create an enum"
+	},
+	"Struct": {
+		"prefix": "st",
+		"body": [
+			"public struct ${1:StructName}",
+			"{",
+			"\t$0",
+			"}"
+		],
+		"description": "Create a struct"
+	},
+	"Singleton Pattern": {
+		"prefix": "sing",
+		"body": [
+			"public sealed class ${1:ClassName}",
+			"{",
+			"\tprivate static readonly ${1:ClassName} _instance = new ${1:ClassName}();",
+			"",
+			"\tprivate ${1:ClassName}()",
+			"\t{",
+			"\t}",
+			"",
+			"\tpublic static ${1:ClassName} Instance => _instance;",
+			"",
+			"\t$0",
+			"}"
+		],
+		"description": "Singleton pattern"
+	},
+	"Main Method": {
+		"prefix": "m",
+		"body": [
+			"static void Main(string[] args)",
+			"{",
+			"\t$0",
+			"}"
+		],
+		"description": "Main method"
+	},
+	"Lambda Expression": {
+		"prefix": "lm",
+		"body": [
+			"(${1:x}) => ${2:x}.$0"
+		],
+		"description": "Lambda expression"
+	},
+	"Expression Body Member": {
+		"prefix": "ex",
+		"body": [
+			"public ${1:string} ${2:PropertyName} => ${3:};$0"
+		],
+		"description": "Expression-bodied member"
+	},
+	"Switch Expression": {
+		"prefix": "sw",
+		"body": [
+			"${1:variable} switch",
+			"{",
+			"\t${2:pattern1} => ${3:result1},",
+			"\t${4:pattern2} => ${5:result2},",
+			"\t_ => ${6:defaultResult}",
+			"}$0"
+		],
+		"description": "Switch expression"
+	},
+	"Pattern Matching": {
+		"prefix": "pm",
+		"body": [
+			"if (${1:obj} is ${2:Type} ${3:variable})",
+			"{",
+			"\t$0",
+			"}"
+		],
+		"description": "Pattern matching with is"
+	}
+}
