@@ -28,7 +28,7 @@
 	"workbench.statusBar.visible": false,
 	"window.zoomLevel": 0.5,
 	"workbench.activityBar.location": "hidden",
-	"editor.fontSize": 17,
+	"editor.fontSize": 18,
 	"editor.renderLineHighlight": "none",
 	"editor.bracketPairColorization.enabled": false,
 	"workbench.layoutControl.enabled": false,
@@ -51,7 +51,7 @@
 	"workbench.settings.applyToAllProfiles": [
 		"editor.fontFamily"
 	],
-	"editor.scrollbar.verticalScrollbarSize": 3,
+	"editor.scrollbar.verticalScrollbarSize": 0,
 	"security.workspace.trust.untrustedFiles": "open",
 	"terminal.external.linuxExec": "ghostty",
 	"csharp.debug.console": "integratedTerminal",
@@ -198,7 +198,7 @@
 				"b"
 			],
 			"commands": [
-				"workbench.action.toggleSidebarVisibility"
+				"editor.debug.action.toggleBreakpoint"
 			]
 		},
 		{
@@ -241,7 +241,6 @@
 		{
 			"before": [
 				"<leader>",
-				"d",
 				"d"
 			],
 			"commands": [
@@ -295,7 +294,7 @@
 	"debug.hideSlowPreLaunchWarning": true,
 	"editor.hideCursorInOverviewRuler": true,
 	"editor.lightbulb.enabled": "off",
-	"breadcrumbs.enabled": false,
+	"breadcrumbs.enabled": true,
 	"workbench.editor.showTabs": "none",
 	"editor.wordWrap": "on",
 	"editor.formatOnSave": true,
@@ -368,9 +367,9 @@
 	"cSpell.language": "en,sv-SE",
 	"cSpell.userWords": [
 		"firestore",
-		"Tasker"
+		"Tasker",
+		"weatherforecast"
 	],
-	"redhat.telemetry.enabled": false,
 	"terminal.integrated.hideOnStartup": "always",
 	"gitlens.ai.model": "gitkraken",
 	"gitlens.ai.gitkraken.model": "gemini:gemini-2.0-flash",
@@ -379,5 +378,7 @@
 	"gitlens.statusBar.enabled": false,
 	"gitlens.statusBar.pullRequests.enabled": false,
 	"gitlens.codeLens.authors.enabled": false,
-	"gitlens.codeLens.recentChange.enabled": false
+	"gitlens.codeLens.recentChange.enabled": false,
+	"workbench.secondarySideBar.defaultVisibility": "hidden",
+	"github.copilot.nextEditSuggestions.enabled": true
 }
